@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merchandise</title>
+    <link rel="stylesheet" href="src/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- NAVBAR -->
+      <div class="navbar">
+        <a href="index.html">
+          <div id="logo">
+            <img
+              width="100px"
+              id="logo-img"
+              height="60px"
+              src="img/logo.png"
+              alt="Logo"
+            />
+          </div>
+        </a>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Products.html">Products</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div id="nav-right">
+          <a href="cart.html">
+            <div class="cart">
+              <div id="cartamount" class="cartamount">0</div>
+              <i class="bi bi-cart4"></i>
+            </div>
+          </a>
+          <i class="bi bi-search"></i>
+          <input type="text" id="searchInput" placeholder="Search" />
+
+          <!-- Dynamically displaying suggestions in the following div according to what keywords user types through javascript -->
+          <div class="suggestions"></div>
+
+          <a href="#" class="login">Login</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- PREV PAGE BUTTON -->
+      <div class="left-arrow">
+        <a href="Products.html">
+          <i class="bi bi-arrow-left-circle-fill"></i>
+        </a>
+      </div>
+
+      <!-- HEADING FOR CART -->
+      <h1 id="cart-heading">Your Cart</h1>
+
+      <!-- Dynamically adding selected products & their total in the following divs through javascript  -->
+      <div class="cart-content">
+        <div id="boughtItems"></div>
+        <div id="label"></div>
+      </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2024 Fashion Boutique. All rights reserved.</p>
+      </div>
+      <div class="social-media">
+        <a href="#"><img src="img/twitter-x-logo-42554.png" alt="" /></a>
+        <a href="#"><img src="img/whatsapp-logo-png-2285.png" alt="" /></a>
+        <a href="#"><img src="img/instagram-icon-33471.png" alt="" /></a>
+      </div>
+    </footer>
+
+    <!-- Linking script files at the end of the body to make the html load first -->
+    <script src="src/Data.js"></script>
+    <script src="src/cart.js"></script>
+  </body>
+</html>
